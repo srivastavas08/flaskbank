@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="row justify-content-center mb-3">
+  <div class="col-md-12">
+    <h1 class="mb-4">Account status</h1>
+    <table class="table table-hover table-striped table-bordered">
+      <thead >
+        <tr class="bg-dark text-warning">
+          <th>Customer ID</th>
+          <th>Account ID</th>
+          <th>Account Type</th>
+          <th>Status</th>
+          <th>Message</th>
+          <th>Last Updated</th>
+          <th>Operations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>011112223</td>
+          <td>0</td>
+          <td>Savings</td>
+          <td>pending</td>
+          <td> ----- </td>
+          <td>2020-06-24 15:59:51</td>
+          <td>
+            <a class="link" href="#">Refresh</a>
+          </td>
+        </tr>
+        <tr>
+          <td>011112223</td>
+          <td>123455678</td>
+          <td>Current</td>
+          <td>Active</td>
+          <td>account creation complete</td>
+          <td>2020-06-24 15:59:51</td>
+          <td>
+            <a class="link" href="#">Refresh</a>
+          </td>
+        </tr>
+        <tr>
+          <td>011112223</td>
+          <td>123455678</td>
+          <td>Savings</td>
+          <td>Active</td>
+          <td>Customer already have a account of specified type</td>
+          <td>2020-06-24 15:59:51</td>
+          <td>
+            <a class="link" href="#">Refresh</a>
+          </td>
+        </tr>
+        <tr>
+          <td>011112223</td>
+          <td>123455678</td>
+          <td>Current</td>
+          <td>Active</td>
+          <td>Customer already have a account of specified type</td>
+          <td>2020-06-24 15:59:51</td>
+          <td>
+            <a class="link" href="#">Refresh</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <div  class=" col mx-auto my-3">
+      <button type="submit" class="btn btn-dark btn-block text-warning ">Refresh List</button>
+    </div>
+  </div>
+</div>
+{% endblock %}

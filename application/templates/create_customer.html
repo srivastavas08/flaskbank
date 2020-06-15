@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container">
+  <form name="login" action="" method="post" novalidate>
+ <fieldset class="form-group">
+     <legend>{{title}}</legend>     
+     {{ form.hidden_tag() }}       
+            
+         <p> {{ form.name.label }}</br>
+             {{ form.name }}
+             {% for error in form.name.errors %}
+              <span class="error-message">{{ error }}</span>
+             {% endfor %}
+         </p>
+     
+         <p> {{ form.age.label }}</br>
+             {{ form.age }}
+             {% for error in form.age.errors %}
+              <span class="error-message">{{ error }}</span>
+             {% endfor %}
+         </p>
+         <p> {{ form.address1.label }}</br>
+          {{ form.address1 }}
+          {% for error in form.address1.errors %}
+           <span class="error-message">{{ error }}</span>
+          {% endfor %}
+      </p>
+      <p> {{ form.address2.label }}</br>
+        {{ form.address2 }}
+        {% for error in form.address2.errors %}
+         <span class="error-message">{{ error }}</span>
+        {% endfor %}
+    </p>
+      <p> {{ form.state.label }}</br>
+        {{ form.state }}
+        {% for error in form.state.errors %}
+         <span class="error-message">{{ error }}</span>
+        {% endfor %}
+    </p>
+    <p> {{ form.city.label }}</br>
+      {{ form.city }}
+      {% for error in form.city.errors %}
+       <span class="error-message">{{ error }}</span>
+      {% endfor %}
+  </p>
+         <p> 
+             {{ form.submit() }}
+         </p>
+     
+ </fieldset>
+ </form>
+</div>
+{% endblock %}
