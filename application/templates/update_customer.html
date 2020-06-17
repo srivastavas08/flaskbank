@@ -7,9 +7,10 @@
   <form action="" method="POST">
     <div class="form-row">
     <div class="form-group row col-md-12">
-      <label class="col-sm-4 col-form-label">Customer SSN ID: </label>
+      <label for="ssnid" class="col-sm-4 col-form-label">Customer SSN ID: <text class="text-danger">*</text></label>
       <div class="col-sm-8">
-        <label class="col-form-label" >123456789</label>
+        <!-- <label class="col-form-label" >123456789</label> -->
+        <input type="text" id="ssnid" name="ssnID" class="form-control" required value={{request.form.ssnID}}>
       </div>
     </div>
     <div class="form-group row col-md-12">
@@ -63,5 +64,10 @@
   </form>
 </div>
 </div>
+</div>
+<div>
+  <p>
+    {{msg}}
+  </p>
 </div>
 {% endblock %}

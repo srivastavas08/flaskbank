@@ -3,37 +3,37 @@
 {% block body %}
 <div class="row justify-content-center mb-3">
   <div class="col-md-6">
-  <h1 class="mb-4">Deposit Money</h1>
+  <h1 class="mb-4">Withdraw Money</h1>
   <form action="" method="POST">
     <div class="form-row">
     <div class="form-group row col-md-12">
       <label class="col-sm-4 col-form-label">Customer ID: </label>
       <div class="col-sm-8">
-        <input id="custid" type="number" name="custid" class="form-control"  required value={{request.form.custid}}>
+        <label class="col-form-label" >123456789</label>
       </div>
     </div>
     <div class="form-group row col-md-12">
       <label class="col-sm-4 col-form-label">Account ID: </label>
       <div class="col-sm-8">
-        <input id="accid" type="number" name="accid" class="form-control"  required value={{request.form.accid}}>
+        <label class="col-form-label" >111111333</label>
       </div>
     </div>
-
     <div class="form-group row col-md-12">
-      <label for="account type" class="col-sm-4 col-form-label">Account Type: <text class="text-danger">*</text></label>
+      <label class="col-sm-4 col-form-label">Account Type: </label>
       <div class="col-sm-8">
-        <select id="accounttype" name="accounttype" class="form-control" required>
-          <option disabled>Account type</option>
-          <option >Savings</option>
-          <option >Current</option>
-        </select>
+        <label class="col-form-label" >Savings</label>
       </div>
     </div>
-
     <div class="form-group row col-md-12">
-      <label for="depAmt" class="col-sm-4 col-form-label">Amount to withdraw: <text class="text-danger">*</text></label>
+      <label class="col-sm-4 col-form-label">Balance: </label>
       <div class="col-sm-8">
-        <input id="depAmt" type="number" name="depAmt" class="form-control"  required value={{request.form.depAmt}}>
+        <label class="col-form-label" >59925</label>
+      </div>
+    </div>
+    <div class="form-group row col-md-12">
+      <label for="customeraddress" class="col-sm-4 col-form-label">Amount to Withdraw: <text class="text-danger">*</text></label>
+      <div class="col-sm-8">
+        <input id="customeraddress" type="number" name="custAddress" class="form-control"  required value={{request.form.custAddress}}>
       </div>
     </div>
     <div class="col-md-12"><p class="text-danger">(*) Feilds are mendatory</p></div>

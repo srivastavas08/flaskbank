@@ -7,19 +7,28 @@
   <form action="" method="POST">
     <div class="form-row">
       <div class="form-group row col-md-12">
-        <label for="customercity" class="col-sm-4 col-form-label">Account ID: <text class="text-danger">*</text></label>
+        <label for="account_id" name="account_id" class="col-sm-4 col-form-label">Customer ID: <text class="text-danger">*</text></label>
         <div class="col-sm-8">
+          <input type="text" id="accid" name="accid" class="form-control" required value={{request.form.accid}}>
+        </div>
+        <!-- <div class="col-sm-8">
           <select id="customercity" class="form-control" required>
             <option >SSNID - 111222333</option>
             <option >CUSTID - 000111111</option>
           </select>
-        </div>
+        </div> -->
       </div>
     <div class="form-group row col-md-12">
-      <label for="accType" class="col-sm-4 col-form-label">Account Type:</label>
+      <label for="accounttype" name="accounttype" class="col-sm-4 col-form-label">Account Type:<text class="text-danger">*</text></label>
+      
       <div class="col-sm-8">
-        <input id="accType" type="text" name="custAddress" class="form-control"  disabled value={{request.form.accTypes}}>
+        <select id="accounttype" name="accounttype" class="form-control" required>
+          <option disabled>Account type</option>
+          <option >Savings</option>
+          <option >Current</option>
+        </select>
       </div>
+        <!-- <input id="accType" type="text" name="custAddress" class="form-control"  required value={{request.form.accounttype}}> -->
     </div>
     <div  class=" col-md-6 mx-auto my-3">
     <button type="submit" class="btn btn-danger ml-1">Confirm Delete</button>
