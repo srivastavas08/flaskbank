@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="row justify-content-center mb-3">
+  <div class="col-md-12">
+    <h1 class="mb-4">Customer status</h1>
+    <table class="table table-hover table-striped table-bordered">
+      <thead>
+        <tr class="bg-dark text-warning">
+          <th scope="col">Customer ID</th>
+          <th scope="col"> Customer SSN ID</th>
+          <th scope="col">name</th>
+          <th scope="col">status</th>
+          <th scope="col">Last Updated</th>
+          <th scope="col">Account Operation</th>
+          <th scope="col">View Profile</th>
+        </tr>
+      </thead>
+      <div>
+        <tbody>
+
+          <!-- Construct the rest of courses here -->
+          {% for data in courseData %}
+          <tr>
+            <td scope='row'>{{ data["cust_id"] }}</td>
+            <td>{{ data["ssn_id"] }}</td>
+            <td>{{ data["name"] }}</td>
+            <td>{{ data["status"] }}</td>
+            <td>{{ data["last_action"] }}</td>
+            <td><a class="btn btn-link" href="{{ url_for('custStatus') }}">Refresh</a></td>
+            <td><a class="btn btn-link" href="{{ url_for('custStatus') }}">View Profile</a></td>
+          </tr>
+          {% endfor %}
+
+        </tbody>
+    </table>
+  </div>
+
+  {% endblock %}

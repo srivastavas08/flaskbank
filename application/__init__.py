@@ -16,4 +16,3 @@ db.init_app(app)
 
 
 from application import routes
-

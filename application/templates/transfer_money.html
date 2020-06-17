@@ -7,15 +7,25 @@
   <form action="" method="POST">
     <div class="form-row">
     <div class="form-group row col-md-12">
-      <label for="cid" class="col-sm-5 col-form-label">Customer ID:</label>
+      <label for="cid" class="col-sm-5 col-form-label">Source Customer ID:</label>
       <div class="col-sm-7">
-        <input type="text" id="cid" name="ssnID" class="form-control" disabled value={{request.form.ssnID}}>
+        <input type="text" id="cid" name="source_custid" class="form-control"  value={{request.form.source_custid}}>
       </div>
     </div>
+
+
+    <div class="form-group row col-md-12">
+      <label for="cid" class="col-sm-5 col-form-label">Target Customer ID:</label>
+      <div class="col-sm-7">
+        <input type="text" id="cid" name="target_custid" class="form-control"  value={{request.form.target_custid}}>
+      </div>
+    </div>
+
+
     <div class="form-group row col-md-12">
       <label for="account type" class="col-sm-5 col-form-label">Source Account Type: <text class="text-danger">*</text></label>
       <div class="col-sm-7">
-        <select id="accounttype" class="form-control" required>
+        <select id="accounttype" name="source_accounttype" class="form-control" required>
           <option disabled> Source Account type</option>
           <option >Savings</option>
           <option >Current</option>
@@ -25,7 +35,7 @@
     <div class="form-group row col-md-12">
       <label for="account type" class="col-sm-5 col-form-label">Target Account Type: <text class="text-danger">*</text></label>
       <div class="col-sm-7">
-        <select id="accounttype" class="form-control" required>
+        <select id="accounttype" name="target_accounttype" class="form-control" required>
           <option disabled> Target Account type</option>
           <option >Savings</option>
           <option >Current</option>
@@ -35,7 +45,7 @@
     <div class="form-group row col-md-12">
       <label for="depAmt" class="col-sm-5 col-form-label">Amount to Transfer: <text class="text-danger">*</text></label>
       <div class="col-sm-7">
-        <input type="number" id="depAmt" name="ssnID" class="form-control" required value={{request.form.ssnID}}>
+        <input type="number" id="depAmt" name="depAmt" class="form-control" required value={{request.form.depAmt}}>
       </div>
     </div>
     <div class="col-md-12"><p class="text-danger">(*) Feilds are mendatory</p></div>

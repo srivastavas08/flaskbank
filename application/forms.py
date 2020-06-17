@@ -9,6 +9,8 @@ class LoginForm(FlaskForm):
     remember_me = BooleanField("Remember Me")
     submit = SubmitField("Login")
 
+
+
 class RegisterForm(FlaskForm):
     email   = StringField("Email", validators=[DataRequired(), Email()])
     password = PasswordField("Password", validators=[DataRequired(),Length(min=6,max=15)])
@@ -27,8 +29,8 @@ class Newcustomer(FlaskForm):
     address1 = StringField("Address Line 1", validators=[DataRequired()])
     address2 = StringField("Address Line 2", validators=[DataRequired()])
     age = StringField("Age", validators=[DataRequired()])
-    state = StringField("state", validators=[DataRequired()])
-    city = StringField("city", validators=[DataRequired()])
+    state = StringField("State", validators=[DataRequired()])
+    city = StringField("City", validators=[DataRequired()])
     submit = SubmitField("Submit")
 
 

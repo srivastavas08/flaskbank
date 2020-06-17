@@ -6,11 +6,13 @@
             <h1>Welcome to Flask Banking Services.</h1>
 
             {% if session['username'] %}
-                <h3>Let's get started.</h3>
+                <h3 class="mb-3">Let's get started.</h3>
             {% else %}
-                <p>Already registered? <a href="{{url_for('login') }}">Login</a></p>
+                <p class="mb-3">Already registered? <a href="{{url_for('login') }}">Login</a></p>
             {% endif %}
 
+
+            {% if not session['username'] %}
             <div style="text-align:left;">
                 <h2> Why should you join us?</h2> 
                 
@@ -23,6 +25,18 @@
                 <p>Having a bank account can be a great tool for managing your personal finances. Account statements can help you determine how and where you are spending your money and put you on track for a reasonable savings plan. Additionally, personal savings accounts often pay interest, which basically earns you free money. Interest paid means your money is working harder for you</p>
                 <p>To open up a standard bank account, visit some financial institutions in your neighborhood and compare fees, interest rates and other benefits before deciding which bank is right for you. Make sure to compare a national bank, a regional institution and a credit union, if you are eligible to become a member. Start with their websites to save you time.</p>
             </div>
+            {% else %}
+            <div style="text-align: left;">
+                <h2>About Us</h2>
+                <p>Flask Banking Services Ltd. is an Indian banking and financial services company headquartered in Lucknow, Uttar Pradesh. It has a base of 3 permanent employees as of 16 June 2020. Flask Bank is India’s only flask based lender by assets.It is the largest bank in India by market capitalisation as of March 2020.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 justify-content-center mb-5 mx-auto">
+                <img class="mx-auto" src="{{ url_for('static',filename='images/capture.png')}}">
+                
+            </div>
+            </div>
+            {% endif %}
 
         </div>
     </div>

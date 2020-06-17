@@ -27,14 +27,6 @@ class Enrollment(db.Document):
     user_id     = db.IntField ()
     courseID   = db.StringField( max_length=10 )
 
-
-# class UpdateUser(db.Document):
-    
-class UpdateCustomer(db.Document): ##########################
-    def get_db(self):
-        return self.db
-
-        
 class newcustomer(db.Document):
     ssn_id         = db.IntField( unique=True )
     cust_id        = db.IntField ()
@@ -45,12 +37,19 @@ class newcustomer(db.Document):
     city           = db.StringField( max_length=15 )
     accounttype    = db.StringField(max_length=10)
     accbalance     = db.FloatField()
+    msg            = db.StringField(max_length = 50)
+    last_action    = db.DateTimeField()
+    status         = db.StringField()
+    transaction_id = db.IntField()
 
 class BankTransfers(db.Document):
     to_cust_id     = db.IntField()
     from_cust_id   = db.IntField()
     transaction_date = db.DateTimeField()
     transaction_amt = db.FloatField()
+    transaction_type = db.StringField()
+    transaction_id = db.IntField(max_length=15)
+
 
 class HelperCustomer(db.Document):
     def get_customer_for_update(self, ssnid):
@@ -65,5 +64,10 @@ class HelperCustomer(db.Document):
     def get_customer_using_custid(self, custid):
         update_customer = newcustomer.objects(cust_id=custid).get()
         return update_customer
+
+
+
+
+
 
    
