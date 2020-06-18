@@ -8,7 +8,7 @@
       <div class="form-row">
         <div class="form-group col-md-12">
           <label>Customer ID</label>
-          <input type="text" name="custid" class="form-control" value={{request.form.custid}}>
+          <input type="text" name="custid" onkeypress="return /[0-9]/i.test(event.key)" class="form-control" value={{request.form.custid}}>
         </div>
 
         <button type="submit" class="btn btn-primary">View</button>
@@ -19,9 +19,8 @@
 </div>
 
 <div class="container">
-  
   <table class="table table-hover table-striped table-bordered">
-    {% for key in data %}
+
     <thead>
       <tr class="bg-dark text-warning">
 
@@ -29,22 +28,22 @@
         <th>Transaction Amount</th>
         <th>Transaction Type</th>
         <th>Transaction ID</th>
-
       </tr>
     </thead>
+    {% for key in data %}
     <tbody>
       <tr>
-        
+
         <td>{{key.transaction_date}}</td>
         <td>{{key.transaction_amt}}</td>
         <td>{{key.transaction_type}}</td>
         <td>{{key.transaction_id}}</td>
-        
+
 
       </tr>
     </tbody>
+    {% endfor %}
   </table>
 </div>
-{% endfor %}
 
 {% endblock %}

@@ -5,7 +5,7 @@ from application.models import User, Course, Enrollment, newcustomer, HelperCust
 import random
 from random import randint
 from datetime import datetime, timezone 
-
+import time
 
 @app.route("/")
 @app.route("/index") #all these will redirect to a single function index
@@ -38,13 +38,6 @@ def login():
             flash("Sorry! something went wrong", "danger")
     return render_template("login.html", title="Login", form=form, login=True)
 
-@app.route("/courses/")
-@app.route("/courses/<term>")
-def courses(term = None):
-    if term is None:
-        term = "Spring 2019"
-    classes = Course.objects.order_by("-courseID")
-    return render_template("courses.html", courseData=classes, courses = True, term=term )
 
 @app.route("/register", methods=['POST','GET'])
 def register():
@@ -78,20 +71,19 @@ def logout():
     return redirect(url_for('index'))
 
 @app.route("/api/")
-@app.route("/api/<idx>")
-def api(idx=None): #if no data is passed to idx it will take none
-    if idx==None :
-        jdata=courseData
+@app.route("/api/<ssnid>")
+def api(ssnid): #if no data is passed to idx it will take none
+    if not session.get('username'):
+        return redirect(url_for('index'))
+    helper_class = HelperCustomer()
+    target_customer_object = helper_class.get_customer_for_update(ssnid)
+
+    if ssnid==None :
+        jdata=target_customer_object
     else:
-        jdata=courseData[int(idx)]
-    return Response(json.dumps(jdata), mimetype="application/json")
-   
-@app.route('/user')
-def user():
-    #User( user_id= 1, first_name="Jacques", last_name="Blazewicz", email="jblazewicz0@posterous.com", password="k9doaly").save()
-    #User( user_id= 2, first_name="Budd", last_name="Zellick", email="bzellick1@uol.com.br", password="kik8N0cyKG" ).save()
-    users = User.objects.all()
-    return render_template("user.html", users=users)
+        jdata=target_customer_object
+        jdata = create_customer_account_dict(jdata)
+    return render_template('view.html', data=jdata, api=True)
 
 
 # create customer
@@ -127,7 +119,7 @@ def createCust():
 
         flash("Customer creation initiated successfully","success")
         return redirect(url_for('index'))
-    return render_template('create_customer.html', title="New_Customer", form=form, createCust=True)
+    return render_template('create_customer.html', title="New Customer", form=form, createCust=True)
 
 # update customer
 @app.route('/update_customer', methods=['GET', 'POST'])
@@ -259,6 +251,7 @@ def deleteAcc():
 # customer search
 @app.route('/customer_search', methods=['GET', 'POST'])
 @app.route('/customer_search/', methods=['GET', 'POST'])
+
 def custSearch(custid=None, ssnid=None):
     if not session.get('username'):
         return redirect(url_for('index'))
@@ -516,11 +509,6 @@ def printStm():
         return render_template('print_stm.html',data=deserialized_bank_transfer)
     return render_template('print_stm.html')
 
-# Statements by date
-@app.route('/date_stm', methods=['GET', 'POST'])
-def dateStm():
-    return render_template('date_stm.html')
-
 # customer status
 @app.route('/customer_status', methods=['GET', 'POST'])
 def custStatus():
@@ -636,4 +624,42 @@ def check_if_cashier(email):
         is_cashier_flag = 1
     return is_cashier_flag
 
+def format_dates(date1):
+    d1 = time.strptime(date1, "%Y-%m-%d")
+    return d1
+
+
 ###########################################################
+
+
+# Statements by date
+@app.route('/date_stm', methods=['GET', 'POST'])
+def dateStm():
+    if not session.get('username'):
+        return redirect(url_for('index'))
+    cashier_flag = check_if_cashier(session.get('email'))
+    if(cashier_flag != 1):
+        flash(f"unprivilaged access, login with cashier/teller account", "danger")
+        return redirect(url_for('index'))
+    if request.method == "GET":
+        return render_template('date_stm.html')
+    if request.method == "POST":
+        from_date = request.form.get('from_date')
+        to_date = request.form.get('to_date')
+        custid = request.form.get('custid', type = int)
+        print(from_date)
+        deserialized_bank_transfer = []
+
+        from_date = format_dates(from_date)
+        to_date = format_dates(to_date)
+
+        for x in BankTransfers.objects(to_cust_id=custid):
+            tmp_date = str(x.transaction_date).split(' ')[0]
+            tmp_date = format_dates(tmp_date)
+            if( tmp_date > from_date and tmp_date <= to_date):
+                tmp = create_customer_transaction_dict(x)
+                deserialized_bank_transfer.append(tmp)
+        return render_template('date_stm.html', data=deserialized_bank_transfer, datestm=True)
+    return render_template('date_stm.html')
+
+    

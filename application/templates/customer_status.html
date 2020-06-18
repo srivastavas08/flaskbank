@@ -30,7 +30,7 @@
           <a class="link" href="{{ url_for('custStatus') }}">Refresh</a>
         </td>
         <td>
-          <a class="link" href="{{ url_for('custStatus') }}">View Detail</a>
+          <a class="link" href="{{ url_for('api', ssnid=key.SSNID ) }}">View Detail</a>
         </td>
       {% endfor %}
     </tbody>

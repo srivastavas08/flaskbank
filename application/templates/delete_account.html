@@ -9,7 +9,7 @@
       <div class="form-group row col-md-12">
         <label for="account_id" name="account_id" class="col-sm-4 col-form-label">Customer ID: <text class="text-danger">*</text></label>
         <div class="col-sm-8">
-          <input type="text" id="accid" name="accid" class="form-control" required value={{request.form.accid}}>
+          <input type="text" id="accid" name="accid" onkeypress="return /[0-9]/i.test(event.key)" class="form-control" required value={{request.form.accid}}>
         </div>
         <!-- <div class="col-sm-8">
           <select id="customercity" class="form-control" required>

@@ -11,7 +11,7 @@
                 <div class="col-sm-4 col-form-label">
                     {{ form.name.label }}<text class="text-danger">*</text>
                 </div>
-                <div class="col-sm-8">{{ form.name(class_="form-control") }}</div>
+                <div class="col-sm-8">{{ form.name(class_="form-control", onkeypress="return /[a-z]/i.test(event.key)") }}</div>
                 {% for error in form.name.errors %}
                 <span class="error-message">{{ error }}</span>
                 {% endfor %}
@@ -21,7 +21,7 @@
                 <div class="col-sm-4 col-form-label">
                     {{ form.age.label }}<text class="text-danger">*</text>
                 </div>
-                <div class="col-sm-8">{{ form.age(class_="form-control") }}</div>
+                <div class="col-sm-8">{{ form.age(class_="form-control", onkeypress="return /[0-9]/i.test(event.key)") }}</div>
                 {% for error in form.age.errors %}
                 <span class="error-message">{{ error }}</span>
                 {% endfor %}
