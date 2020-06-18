@@ -1,0 +1,100 @@
+[{
+  "_id": {
+    "$oid": "5ee5fe64fe243c13d7b4b2c5"
+  },
+  "user_id": 21,
+  "first_name": "Shivam",
+  "last_name": "Srivastava",
+  "email": "srivastavas08@gmail.com",
+  "password": "pbkdf2:sha256:150000$b4RTt5vw$ec5654c298693ff70f45b43c15451dc26692ec5d966f1fe1f3d83be46023f850"
+},{
+  "_id": {
+    "$oid": "5ee60008fe243c13d7b4b2c6"
+  },
+  "user_id": 22,
+  "first_name": "Anuj",
+  "last_name": "verma",
+  "email": "abc@gmaill.com",
+  "password": "pbkdf2:sha256:150000$qgz4eRjY$fca21722b19e07f78d04a8f2d272224c02858eea687f06f49230df916cde0d98"
+},{
+  "_id": {
+    "$oid": "5ee6037e9da0e3e655e7a46e"
+  },
+  "user_id": 23,
+  "first_name": "Kunal",
+  "last_name": "Chandra",
+  "email": "kunalchandra1995@gmail.com",
+  "password": "pbkdf2:sha256:150000$JgNrSpH4$511978dda807a3e41a7f5205d1945ccf4c6a0a6d95da16a2398dc63cd1f60ecd"
+},{
+  "_id": {
+    "$oid": "5ee61a43c730bfa508ceb9c5"
+  },
+  "user_id": 24,
+  "first_name": "Kunal",
+  "last_name": "Chandra",
+  "email": "usha@gmail.com",
+  "password": "pbkdf2:sha256:150000$4PHXCr4M$50acdc4bb1649122218c6e86fa50e5f2cb3c4b8e049f629c2ca7d1181e5d666d"
+},{
+  "_id": {
+    "$oid": "5ee61c27c730bfa508ceb9c8"
+  },
+  "user_id": 25,
+  "first_name": "Anuj",
+  "last_name": "verma",
+  "email": "anuj@abc.com",
+  "password": "pbkdf2:sha256:150000$JaiYIuVO$d6acd1469af47e07285876605af45e826b594b4ebf36bb24340c5b88a96532b4"
+},{
+  "_id": {
+    "$oid": "5ee7acc0564664c7b92dd852"
+  },
+  "user_id": 1,
+  "first_name": "asd",
+  "last_name": "asd",
+  "email": "asd@gmail.com",
+  "password": "pbkdf2:sha256:150000$dMXGAPUV$c1385c98b8e82730fb48f67855848527f1aedfc94f4ce8cc1b1a98fc0dd1105d"
+},{
+  "_id": {
+    "$oid": "5ee9444ad5c3ea8ac7e14e1e"
+  },
+  "user_id": 2,
+  "first_name": "def",
+  "last_name": "pqr",
+  "email": "asd@teller.com",
+  "password": "pbkdf2:sha256:150000$Od0WVVO3$2d09f30b38e832291b2e461f38ed8f85e85b91a213287e95b8d203d95c519c7c"
+},{
+  "_id": {
+    "$oid": "5ee9fead2f232b3859cfc9e7"
+  },
+  "user_id": 8,
+  "first_name": "Shivam",
+  "last_name": "Srivastava",
+  "email": "srivastavas08@teller.com",
+  "password": "pbkdf2:sha256:150000$F0s4qth0$118afd1c0a33cb29818b64c59d96052fddc7c00a5449b82cc5b39bf631bce4e5"
+},{
+  "_id": {
+    "$oid": "5eeb2488a9154822fdd1bb92"
+  },
+  "user_id": 9,
+  "first_name": "Flask",
+  "last_name": "Bank",
+  "email": "admin@teller.com",
+  "password": "pbkdf2:sha256:150000$6OJwMonk$efd2e95811dc295cc7492d8048e35343172f2f9cced7ed3fcfdb1c175fd77b3a"
+},{
+  "_id": {
+    "$oid": "5eeb3e752853d4010ef6167e"
+  },
+  "user_id": 10,
+  "first_name": "Cashier",
+  "last_name": "Srivastava",
+  "email": "xyz@gmail.com",
+  "password": "pbkdf2:sha256:150000$6Och8crh$23edf0be24dbce6101a8761ceb8e7cc4834a31e9cbb27e8a1fef3063e12e491a"
+},{
+  "_id": {
+    "$oid": "5eeb3eae2853d4010ef6167f"
+  },
+  "user_id": 11,
+  "first_name": "Flask",
+  "last_name": "Teller",
+  "email": "adminxyz@teller.com",
+  "password": "pbkdf2:sha256:150000$tQ1Nhmsd$04cd0953fdf7e750c5bf76c3119f871a4db2c5882aac5fce186a3228b491d1f0"
+}]
