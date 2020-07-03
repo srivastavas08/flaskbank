@@ -1,130 +1,320 @@
 [{
   "_id": {
-    "$oid": "5eea3f5e1db5e7618d6eb1f9"
+    "$oid": "5eea12e532bf7a6750b76968"
   },
-  "ssn_id": 158000048,
-  "cust_id": 100000049,
-  "name": "Raj",
-  "age": "24",
-  "address": "Lucknowlucknow",
-  "state": "UP",
-  "status": "Active",
-  "city": "Lucknow",
-  "accounttype": "Savings",
-  "accbalance": 50000000,
-  "msg": "account created with balance50000000.0",
-  "last_action": {
-    "$date": "2020-06-18T05:56:43.408Z"
+  "to_cust_id": 100000072,
+  "from_cust_id": 100000072,
+  "transaction_date": {
+    "$date": "2020-06-17T12:56:05.860Z"
   },
-  "transaction_id": 269609481112
+  "transaction_amt": 60,
+  "transaction_type": "withdraw"
 },{
   "_id": {
-    "$oid": "5eea46d380099069abddacfb"
+    "$oid": "5eea150e1befc2da7a29c78d"
   },
-  "ssn_id": 158000037,
-  "cust_id": 100000038,
-  "name": "Anuj Verma",
-  "age": "18",
-  "address": "Sector-11Indira Nagar",
-  "state": "UP",
-  "status": "Inactive",
-  "city": "Unnao",
-  "accounttype": "Savings",
-  "accbalance": 9905000,
-  "msg": "successfully recieved 9900000.0",
-  "last_action": {
-    "$date": "2020-06-17T16:37:39.902Z"
-  }
+  "to_cust_id": 100000073,
+  "from_cust_id": 100000072,
+  "transaction_date": {
+    "$date": "2020-06-17T13:05:18.227Z"
+  },
+  "transaction_amt": 50,
+  "transaction_type": "transfer"
 },{
   "_id": {
-    "$oid": "5eea4a4ceeb46eab135d4e73"
+    "$oid": "5eea3794b6f7288766dbb67d"
   },
-  "ssn_id": 158000078,
-  "cust_id": 100000079,
-  "name": "SHIKHA",
-  "age": "95",
-  "address": "banaras",
-  "state": "up",
-  "status": "Active",
-  "city": "varansai",
-  "accounttype": "NaN",
-  "accbalance": 0,
-  "msg": "account deleted",
-  "last_action": {
-    "$date": "2020-06-17T16:52:28.992Z"
-  }
+  "to_cust_id": 100000114,
+  "from_cust_id": 100000052,
+  "transaction_date": {
+    "$date": "2020-06-17T15:32:36.792Z"
+  },
+  "transaction_amt": 5000,
+  "transaction_type": "transfer"
 },{
   "_id": {
-    "$oid": "5eea68d6c4ad3cd19424b466"
+    "$oid": "5eea4bd4eeb46eab135d4e74"
   },
-  "ssn_id": 158000080,
-  "cust_id": 100000081,
-  "name": "Anuj Verma",
-  "age": "18",
-  "address": "Sector-11Indira Nagar",
-  "state": "Up",
-  "city": "unnao",
-  "accounttype": "NaN",
-  "accbalance": 0,
-  "msg": "Account created successfully",
-  "last_action": {
-    "$date": "2020-06-17T19:02:46.142Z"
+  "to_cust_id": 100000079,
+  "from_cust_id": 100000079,
+  "transaction_date": {
+    "$date": "2020-06-17T16:59:00.190Z"
   },
-  "status": "Active"
+  "transaction_amt": 20000,
+  "transaction_type": "withdraw"
 },{
   "_id": {
-    "$oid": "5eea6d6796d3b0080f15fc1f"
+    "$oid": "5eea4c5feeb46eab135d4e75"
   },
-  "ssn_id": 158000069,
-  "cust_id": 100000070,
-  "name": "Anuj Verma",
-  "age": "12",
-  "address": "Sunsaan galiAndheri Nagari",
-  "state": "UP",
-  "city": "Unnao",
-  "accounttype": "Savings",
-  "accbalance": 5500,
-  "msg": "successfully recieved 5000.0",
-  "last_action": {
+  "to_cust_id": 100000038,
+  "from_cust_id": 100000079,
+  "transaction_date": {
+    "$date": "2020-06-17T17:01:19.223Z"
+  },
+  "transaction_amt": 9900000,
+  "transaction_type": "transfer"
+},{
+  "_id": {
+    "$oid": "5eeb02ebf2b502ffda7b47fe"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:00:11.651Z"
+  },
+  "transaction_amt": 1000000,
+  "transaction_type": "deposit"
+},{
+  "_id": {
+    "$oid": "5eeb041002c9480fe6a1401b"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:05:04.957Z"
+  },
+  "transaction_amt": 1000000,
+  "transaction_type": "deposit"
+},{
+  "_id": {
+    "$oid": "5eeb071ee9cf0f8336d8d1c3"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:06.289Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0720e9cf0f8336d8d1c4"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:08.329Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0721e9cf0f8336d8d1c5"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:09.097Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0721e9cf0f8336d8d1c6"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:09.557Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0722e9cf0f8336d8d1c7"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:10.005Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0722e9cf0f8336d8d1c8"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:10.353Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0722e9cf0f8336d8d1c9"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:10.593Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0722e9cf0f8336d8d1ca"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:10.805Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0722e9cf0f8336d8d1cb"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:10.984Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0723e9cf0f8336d8d1cc"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:11.180Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0723e9cf0f8336d8d1cd"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:11.348Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0723e9cf0f8336d8d1ce"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:11.544Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0723e9cf0f8336d8d1cf"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:11.740Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0723e9cf0f8336d8d1d0"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:11.948Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0724e9cf0f8336d8d1d1"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:12.138Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0724e9cf0f8336d8d1d2"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:12.346Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb0724e9cf0f8336d8d1d3"
+  },
+  "to_cust_id": 100000022,
+  "from_cust_id": 100000022,
+  "transaction_date": {
+    "$date": "2020-06-18T06:18:12.555Z"
+  },
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb2f4a76d9f40923529bd6"
+  },
+  "to_cust_id": 100000080,
+  "from_cust_id": 100000080,
+  "transaction_date": {
+    "$date": "2020-06-18T09:09:30.855Z"
+  },
+  "transaction_amt": 50000,
+  "transaction_type": "deposit"
+},{
+  "_id": {
+    "$oid": "5eeb2f6c76d9f40923529bd7"
+  },
+  "to_cust_id": 100000080,
+  "from_cust_id": 100000080,
+  "transaction_date": {
+    "$date": "2020-06-18T09:10:04.782Z"
+  },
+  "transaction_amt": 50000,
+  "transaction_type": "withdraw"
+},{
+  "_id": {
+    "$oid": "5eeb302876d9f40923529bd8"
+  },
+  "to_cust_id": 100000070,
+  "from_cust_id": 100000080,
+  "transaction_date": {
     "$date": "2020-06-18T09:13:12.117Z"
   },
-  "transaction_id": 803790641266
+  "transaction_amt": 5000,
+  "transaction_type": "transfer"
 },{
   "_id": {
-    "$oid": "5eeb026ff2b502ffda7b47fd"
+    "$oid": "5eeb37692853d4010ef6167c"
   },
-  "ssn_id": 158000021,
-  "cust_id": 100000022,
-  "name": "Kajal Chandra",
-  "age": "23",
-  "address": "sector-11Andheri Nagari",
-  "state": "up",
-  "city": "Lucknow",
-  "accounttype": "NaN",
-  "accbalance": 0,
-  "msg": "account deleted",
-  "last_action": {
-    "$date": "2020-06-18T09:07:02.191Z"
+  "to_cust_id": 100000080,
+  "from_cust_id": 100000080,
+  "transaction_date": {
+    "$date": "2020-06-18T09:44:09.233Z"
   },
-  "status": "Active",
-  "transaction_id": 279559138959
+  "transaction_amt": 100,
+  "transaction_type": "withdraw"
 },{
   "_id": {
-    "$oid": "5eeb2d6d76d9f40923529bd5"
+    "$oid": "5eeb37f82853d4010ef6167d"
   },
-  "ssn_id": 158000079,
-  "cust_id": 100000080,
-  "name": "Rish",
-  "age": "20",
-  "address": "Munsi Pulia",
-  "state": "UP",
-  "city": "Lucknow",
-  "accounttype": "Savings",
-  "accbalance": 100,
-  "msg": "successfully withdrawed 4800.0",
-  "last_action": {
+  "to_cust_id": 100000080,
+  "from_cust_id": 100000080,
+  "transaction_date": {
     "$date": "2020-06-18T09:46:32.464Z"
   },
-  "status": "Active",
-  "transaction_id": 650164305067
+  "transaction_amt": 4800,
+  "transaction_type": "withdraw"
 }]
