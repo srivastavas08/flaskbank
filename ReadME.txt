@@ -3,7 +3,7 @@
 3- Import all the required modules from requirements.txt using "pip install -r requirements.txt"
 4 - Now run the flask shell and open localhost:5000 in your browser
 6 - install MongoDB and configure mongoshell on your desktop
-7 - create a database named UTA and inside it create three collections user, Bank_transaction, newcustomer
+7 - create a database named UTA_Enrollment and inside it create three collections user, Bank_transaction, newcustomer
 8 - Now import all the json data from the json file to the collection
 9- Restart the server
 Now You are Good to go
@@ -14,3 +14,6 @@ Login Using Credentials---
 	B- FOR CASHIER?TELLER ACCOUNT-
 		adminxyz@teller.com:qazWSX@123
 
+
+GITHUB LINK - https://github.com/srivastavas08/flaskbank
+JIRA LINK - https://flaskbankingservices.atlassian.net/jira/software/projects/FB/boards/2

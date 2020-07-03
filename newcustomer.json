@@ -1,0 +1,130 @@
+[{
+  "_id": {
+    "$oid": "5eea3f5e1db5e7618d6eb1f9"
+  },
+  "ssn_id": 158000048,
+  "cust_id": 100000049,
+  "name": "Raj",
+  "age": "24",
+  "address": "Lucknowlucknow",
+  "state": "UP",
+  "status": "Active",
+  "city": "Lucknow",
+  "accounttype": "Savings",
+  "accbalance": 50000000,
+  "msg": "account created with balance50000000.0",
+  "last_action": {
+    "$date": "2020-06-18T05:56:43.408Z"
+  },
+  "transaction_id": 269609481112
+},{
+  "_id": {
+    "$oid": "5eea46d380099069abddacfb"
+  },
+  "ssn_id": 158000037,
+  "cust_id": 100000038,
+  "name": "Anuj Verma",
+  "age": "18",
+  "address": "Sector-11Indira Nagar",
+  "state": "UP",
+  "status": "Inactive",
+  "city": "Unnao",
+  "accounttype": "Savings",
+  "accbalance": 9905000,
+  "msg": "successfully recieved 9900000.0",
+  "last_action": {
+    "$date": "2020-06-17T16:37:39.902Z"
+  }
+},{
+  "_id": {
+    "$oid": "5eea4a4ceeb46eab135d4e73"
+  },
+  "ssn_id": 158000078,
+  "cust_id": 100000079,
+  "name": "SHIKHA",
+  "age": "95",
+  "address": "banaras",
+  "state": "up",
+  "status": "Active",
+  "city": "varansai",
+  "accounttype": "NaN",
+  "accbalance": 0,
+  "msg": "account deleted",
+  "last_action": {
+    "$date": "2020-06-17T16:52:28.992Z"
+  }
+},{
+  "_id": {
+    "$oid": "5eea68d6c4ad3cd19424b466"
+  },
+  "ssn_id": 158000080,
+  "cust_id": 100000081,
+  "name": "Anuj Verma",
+  "age": "18",
+  "address": "Sector-11Indira Nagar",
+  "state": "Up",
+  "city": "unnao",
+  "accounttype": "NaN",
+  "accbalance": 0,
+  "msg": "Account created successfully",
+  "last_action": {
+    "$date": "2020-06-17T19:02:46.142Z"
+  },
+  "status": "Active"
+},{
+  "_id": {
+    "$oid": "5eea6d6796d3b0080f15fc1f"
+  },
+  "ssn_id": 158000069,
+  "cust_id": 100000070,
+  "name": "Anuj Verma",
+  "age": "12",
+  "address": "Sunsaan galiAndheri Nagari",
+  "state": "UP",
+  "city": "Unnao",
+  "accounttype": "Savings",
+  "accbalance": 5500,
+  "msg": "successfully recieved 5000.0",
+  "last_action": {
+    "$date": "2020-06-18T09:13:12.117Z"
+  },
+  "transaction_id": 803790641266
+},{
+  "_id": {
+    "$oid": "5eeb026ff2b502ffda7b47fd"
+  },
+  "ssn_id": 158000021,
+  "cust_id": 100000022,
+  "name": "Kajal Chandra",
+  "age": "23",
+  "address": "sector-11Andheri Nagari",
+  "state": "up",
+  "city": "Lucknow",
+  "accounttype": "NaN",
+  "accbalance": 0,
+  "msg": "account deleted",
+  "last_action": {
+    "$date": "2020-06-18T09:07:02.191Z"
+  },
+  "status": "Active",
+  "transaction_id": 279559138959
+},{
+  "_id": {
+    "$oid": "5eeb2d6d76d9f40923529bd5"
+  },
+  "ssn_id": 158000079,
+  "cust_id": 100000080,
+  "name": "Rish",
+  "age": "20",
+  "address": "Munsi Pulia",
+  "state": "UP",
+  "city": "Lucknow",
+  "accounttype": "Savings",
+  "accbalance": 100,
+  "msg": "successfully withdrawed 4800.0",
+  "last_action": {
+    "$date": "2020-06-18T09:46:32.464Z"
+  },
+  "status": "Active",
+  "transaction_id": 650164305067
+}]

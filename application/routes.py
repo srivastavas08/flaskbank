@@ -1,7 +1,7 @@
 from application import app, db
 from flask import render_template, request, json, Response, redirect, flash, url_for, session
 from application.forms import LoginForm, RegisterForm, Newcustomer
-from application.models import User, Course, Enrollment, newcustomer, HelperCustomer, BankTransfers
+from application.models import User, newcustomer, HelperCustomer, BankTransfers
 import random
 from random import randint
 from datetime import datetime, timezone 
